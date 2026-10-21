@@ -43,10 +43,24 @@ The experiment was conducted in Google Colab / Jupyter notebooks for both the ph
 The software used were: Python 3 with pandas, NumPy, Matplotlib, scikit-learn and threadpoolctl.
 
 
+# Google Colab 
+Open a notebook in Google Colab. Its dataset-loading cell diplays a file upload box when the required dataset file is not already present:
+Phase 1 uses adult.data and adult.names
+Phase 2 uses ckd.csv
+
+The notebooks create their result CSV files and chart images in the Colab runtime session. 
+
+# *Reproducibility*
+
+The main comparison uses random seed 42. Seeds 43 and 44 provide a small sensitivity check. The train/test split is grouped to prevent gfeature-identical records from appearing on both sides. Preprocessing values and outlier limits are learned from training rows only. 
+
+The supplied notebooks were executed from beginning to end during testing. Their main metrics exactly match the result tables and report
+
 # Main Finding. 
-The strongest chanfe, atleast for phase 1 came from balanced class weights. The recall increased substantially, but precission decreased. 
+The strongest change, atleast for phase 1 came from balanced class weights. The recall increased substantially, but precission decreased. In phase 2, outlier clipping improved one already strong test split but the gain was not stable across the additional splits. This suggests that data-quality effects are context-dependent. 
 
 
 # Limitation Acknowledgement 
 
-The project is restricted to two datasets, and ONE simply model (logistic regression) as opposed to 19-model such as one study conducted by Mohammed et al. https://arxiv.org/pdf/2207.14529
+The project is restricted to two datasets, and ONE simply model (logistic regression) as opposed to a 19-model study conducted by Mohammed et al. https://arxiv.org/pdf/2207.14529
+Secondly the results describe these experiments. They are not UNIVERSAL rules. 
