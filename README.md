@@ -1,4 +1,4 @@
-# DATA-QUALITY-ML-STUDY-REPO
+# How Data Quality Affects Machine Learning Performance
 This project investigates how missing values, duplicate records, outliers, inconsistent values, and class imbalance affect logistic regression across two datasets: UCI Adult Income and UCI Chronic Kidney Disease. Seven experimental conditions compare individual interventions with a combined pipeline, focusing on performance trade-offs rather than assuming that cleaning always improves results.
 
 # Research question
