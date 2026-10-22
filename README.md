@@ -47,7 +47,7 @@ Both phases use logistic regression and compare the following conditions:
 
 - [Phase 1 notebook](Data_quality_ml_research.ipynb)
 - [Phase 2 notebook](phase_2_data_quality_notebook.ipynb)
-- [Research report](research_report.pdf)
+- [Research report](- [Research report](<How Data Quality Affects Machine Learning Performance (1).pdf>))
 - [Dataset files and documentation](datasets/)
 - [Python dependencies](requirements.txt)
 
